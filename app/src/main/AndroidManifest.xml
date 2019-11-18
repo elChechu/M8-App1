@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalculadoraIVA"></activity>
+        <activity android:name=".Pesoideal"></activity>
     </application>
 
 </manifest>

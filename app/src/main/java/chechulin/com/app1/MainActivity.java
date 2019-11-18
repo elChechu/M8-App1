@@ -35,29 +35,38 @@ public class MainActivity extends Activity {
         }else {
             if (seleccion == 1){
                 textoresultado.setText("Has seleccionado calcular el Iva");
+                mostrarError(false);
             }
             else {
                 textoresultado.setText("Has seleccionado calcular tu peso ideal");
+                mostrarError(false);
             }
         }
     }
 
     // Hacer o no visible el error de seleccion
-    public void mostrarError(){
+    public void mostrarError(boolean visibilidad){
         TextView tv1 = (TextView) findViewById(R.id.textView4);
-        if(tv1.getVisibility() == View.VISIBLE){ //si es Visible lo pones Gone
+        if (!visibilidad){
             tv1.setVisibility(View.GONE);
-        }else{ // si no es Visible, lo pones
-            tv1.setVisibility(View.VISIBLE);
-        }
-    }
-    public void accederCaclculadora(View view, int seleccion){
-
-        Intent intent = new Intent(this, CalculadoraIVA.class);
-        if (seleccion == 0){
-            // generar error de seleccion
         }else {
-            startActivity(intent);
+            tv1.setVisibility(View.VISIBLE);
+            tv1.setText("Error, debe seleccionar una opcion primero");
         }
     }
+    public void accederCaclculadora(View view){
+        Intent intent_iva = new Intent(this, CalculadoraIVA.class);
+        Intent intent_peso = new Intent(this, Pesoideal.class);
+        if (this.seleccion == 0){
+            mostrarError(true);
+        }else {
+            if (this.seleccion == 1){ startActivity(intent_iva); }
+            else if (this.seleccion == 2){ startActivity(intent_peso); }
+        }
+    }
+
+
+
+
+
 }

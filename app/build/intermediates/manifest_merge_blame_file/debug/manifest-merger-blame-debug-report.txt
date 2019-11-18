@@ -11,7 +11,7 @@
 9-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:5:5-20:19
+11-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:5:5-21:19
 12        android:allowBackup="true"
 12-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,6 +45,9 @@
 28        <activity android:name="chechulin.com.app1.CalculadoraIVA" />
 28-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:19:9-61
 28-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:19:19-49
-29    </application>
-30
-31</manifest>
+29        <activity android:name="chechulin.com.app1.Pesoideal" />
+29-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:20:9-56
+29-->/home/chechu/Developer/M8/App1/app/src/main/AndroidManifest.xml:20:19-44
+30    </application>
+31
+32</manifest>

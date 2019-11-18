@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name="chechulin.com.app1.CalculadoraIVA" />
+        <activity android:name="chechulin.com.app1.Pesoideal" />
     </application>
 
 </manifest>
